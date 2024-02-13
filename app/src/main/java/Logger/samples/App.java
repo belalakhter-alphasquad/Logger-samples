@@ -11,12 +11,17 @@ public class App {
 
     public static void main(String[] args) {
 
-        // This is will be saved to the log file
+        // These is will be saved to the log file
+
         LOGGER.error("Error sample statement\n");
+
         LOGGER.info("Info sample statement\n");
+
         LOGGER.debug("Debug sample statement\n");
-        SampleFunctionName();
-        simulateError();
+
+        SampleFunctionName(); // to check if logs have function name instead of classes
+
+        simulateError(); // to check the exception logging feature
     }
 
     private static void SampleFunctionName() {
