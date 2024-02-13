@@ -10,6 +10,14 @@ public class App {
     private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
 
     public static void main(String[] args) {
-        LOGGER.info("Logger is initilzied");
+
+        // This is will be saved to the log file
+        LOGGER.error("Error sample statement");
+        SampleFunctionName();
     }
+
+    private static void SampleFunctionName() {
+        LOGGER.error("Function name will be printed together");
+    }
+
 }
