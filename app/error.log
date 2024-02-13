@@ -39,3 +39,19 @@ java.lang.ArithmeticException: / by zero
 java.lang.ArithmeticException: / by zero
 	at Logger.samples.App.simulateError(App.java:33)
 	at Logger.samples.App.main(App.java:24)
+19:05:28.556 [main] ERROR main - Error sample statement
+
+19:05:28.557 [main] ERROR SampleFunctionName - Function name will be printed together
+
+19:05:28.557 [main] ERROR simulateError - An arithmetic exception occurred
+java.lang.ArithmeticException: / by zero
+	at Logger.samples.App.simulateError(App.java:33)
+	at Logger.samples.App.main(App.java:24)
+19:24:15.894 [main] ERROR main - Error sample statement
+
+19:24:15.895 [main] ERROR SampleFunctionName - Function name will be printed together
+
+19:24:15.895 [main] ERROR simulateError - An arithmetic exception occurred
+java.lang.ArithmeticException: / by zero
+	at Logger.samples.App.simulateError(App.java:33)
+	at Logger.samples.App.main(App.java:24)
