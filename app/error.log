@@ -1,0 +1,17 @@
+18:56:22.107 [main] ERROR main - Error sample statement
+
+18:56:22.108 [main] ERROR SampleFunctionName - Function name will be printed together
+
+18:56:22.108 [main] ERROR simulateError - An arithmetic exception occurred
+
+java.lang.ArithmeticException: / by zero
+	at Logger.samples.App.simulateError(App.java:28)
+	at Logger.samples.App.main(App.java:19)
+18:56:51.535 [main] ERROR main - Error sample statement
+
+18:56:51.536 [main] ERROR SampleFunctionName - Function name will be printed together
+
+18:56:51.537 [main] ERROR simulateError - An arithmetic exception occurred
+java.lang.ArithmeticException: / by zero
+	at Logger.samples.App.simulateError(App.java:28)
+	at Logger.samples.App.main(App.java:19)

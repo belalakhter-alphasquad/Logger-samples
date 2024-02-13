@@ -2,22 +2,22 @@
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <!-- Include method name (%method) in the pattern -->
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %method - %msg%n</pattern>
+
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %method - %msg%n</pattern>
         </encoder>
     </appender>
 
 
     <appender name="ERROR_FILE" class="ch.qos.logback.core.FileAppender">
-        <file>log/error.log</file>
+        <file>error.log</file>
         <append>true</append>
         <encoder>
          
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %method - %msg%n</pattern>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %method - %msg%n</pattern>
         </encoder>
     </appender>
 
-
+ 
     <root level="INFO">
         <appender-ref ref="CONSOLE"/>
     </root>

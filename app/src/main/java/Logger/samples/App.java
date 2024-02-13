@@ -12,12 +12,23 @@ public class App {
     public static void main(String[] args) {
 
         // This is will be saved to the log file
-        LOGGER.error("Error sample statement");
+        LOGGER.error("Error sample statement\n");
+        LOGGER.info("Info sample statement\n");
+        LOGGER.debug("Debug sample statement\n");
         SampleFunctionName();
+        simulateError();
     }
 
     private static void SampleFunctionName() {
-        LOGGER.error("Function name will be printed together");
+        LOGGER.error("Function name will be printed together\n");
     }
 
+    public static void simulateError() {
+        try {
+            int result = 10 / 0;
+        } catch (ArithmeticException e) {
+            LOGGER.error("An arithmetic exception occurred", e);
+        }
+
+    }
 }
